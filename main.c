@@ -35,7 +35,7 @@ void generatePermutations(int arr[], int left, int right) {
         if (shouldSwap(arr, left, i)) {
             swap(&arr[left], &arr[i]);
             generatePermutations(arr, left + 1, right);
-            swap(&arr[left], &arr[i]); // backtrack
+            swap(&arr[left], &arr[i]); 
         }
     }
 }
